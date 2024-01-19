@@ -11,7 +11,7 @@ export default function Navbar() {
     <div style={customStyle} className='h-svh'>
     <div className='flex justify-between text-white'>
         <h1 className='text-2xl'>LOGO</h1>
-        <div className='flex space-x-8 mr-4'>
+        <div className='flex lg:space-x-8 space-x-2 mr-4'>
             <button className='hover:underline'>Home</button>
             <button className='hover:underline'>Blog</button>
             <button className='hover:underline'>Services</button>
