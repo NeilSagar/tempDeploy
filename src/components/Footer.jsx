@@ -36,7 +36,8 @@ export default function Footer() {
             </div>
           </div>
       </div>
-      <div className='flex space-x-2 justify-end'>
+      
+      <div className='flex justify-end min-w-fit flex-wrap'>
         {logos.map((logo,index)=>(
           <img key={index} src={logo} alt='social-app'/>
         ))}
