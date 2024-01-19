@@ -25,13 +25,13 @@ export default function Footer() {
           <div>
             <div className='flex flex-wrap lg:justify-center md:justify-center justify-left mt-5'>
               <div className='m-5'>
-              {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer'>{col}</p>))}
+              {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
               </div>
               <div className='m-5'>
-              {col2.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer'>{col}</p>))}
+              {col2.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
               </div>
               <div className='m-5'>
-              {col3.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer'>{col}</p>))}
+              {col3.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
               </div>
             </div>
           </div>
