@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
       <div className='flex space-x-2 justify-end'>
         {logos.map((logo,index)=>(
-          <img key={index} src={logo}/>
+          <img key={index} src={logo} alt='social-app'/>
         ))}
       </div>
 
