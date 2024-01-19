@@ -66,7 +66,7 @@ export default function Calculator() {
   return (
     <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12   mx-auto text-center lg:-mt-52 md:-mt-64 sm:-mt-80 -mt-96'>
         <div className='bg-white rounded-sm py-3'>
-            <div className='flex justify-around'>
+            <div className='flex justify-around my-2'>
                 <label htmlFor="age">Age :
                 <select id='age' className='p-2 focus:outline-none'>
                 <option value="17-21">17-21</option>
