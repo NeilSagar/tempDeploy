@@ -112,7 +112,7 @@ export default function Calculator() {
             
             </div>
             
-            <div className='flex justify-around mt-5 mb-14'>
+            <div className='flex justify-around mt-5 mb-14 flex-wrap'>
                 <ScoreCard heading="Total Points:" value={totalP}/>
                 <ScoreCard heading="Result:" value={result}/>
             </div>
