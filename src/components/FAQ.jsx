@@ -17,7 +17,7 @@ export default function FAQ() {
 
   return (
     <div className='flex flex-col items-center mt-10 lg:w-2/3 md:2/3 w-5/6 mx-auto'>
-      <h2 className=' text-4xl text-center'>Frequently Asked Questions</h2>
+      <h2 className=' lg:text-4xl md:text-4xl sm:text-2xl text-xl text-center'>Frequently Asked Questions</h2>
       <div className='my-3 flex flex-col space-y-2 w-full'>
         {Questions.map((question,index)=>{
           return(
