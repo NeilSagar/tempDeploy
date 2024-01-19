@@ -23,7 +23,7 @@ export default function Footer() {
             Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
           <div>
-            <div className='flex lg:flex-wrap md:flex-wrap justify-around mt-5'>
+            <div className='flex flex-wrap lg:justify-center md:justify-center justify-left mt-5'>
               <div className='m-5'>
               {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer'>{col}</p>))}
               </div>
