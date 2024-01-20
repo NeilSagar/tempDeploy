@@ -43,7 +43,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <p className='mt-4  mx-auto text-center lg:text-lg md:text-lg text-sm 
+      <p className='mt-4  mx-auto text-center lg:text-lg md:text-lg sm:text-sm text-xs 
       w-11/12'>Copyright 2024 Calender. All right reserved</p>
     </div>
   )
