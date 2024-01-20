@@ -1,14 +1,8 @@
 import React from 'react'
-import headerImg from "../Resources/headerImg.png"
-const customStyle = {
-  backgroundImage: `url(${headerImg})`, // Correct way to set background image
-  backgroundSize: 'cover', // Optional: Adjust as needed
-  backgroundPosition: 'center', // Optional: Adjust as needed
-  // Add other styling properties as needed
-};
+
 export default function Navbar() {
   return (
-    <div style={customStyle} className='h-svh'>
+    <div>
     <div className='flex justify-between text-white'>
         <h1 className='text-2xl'>LOGO</h1>
         <div className='flex lg:space-x-8 space-x-2 mr-4'>
@@ -22,7 +16,7 @@ export default function Navbar() {
         <div className='  text-white flex flex-col space-y-6'>
             <h2 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-3xl text-center '>
             <span className='ColorfulHeading'>ACFT Calculator</span> - Calculate Army Combat Fitness Test Score</h2>
-            <p className='font-light lg:text-2xl md:text-lg text-sm'>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
+            <p className='font-light lg:text-2xl md:text-xl sm:text-lg text-sm'>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
         </div>
     </div>
     </div>
