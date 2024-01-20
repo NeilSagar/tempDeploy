@@ -23,15 +23,15 @@ export default function Footer() {
             Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
           <div>
-            <div className='flex flex-wrap lg:justify-center md:justify-center justify-left mt-5'>
-              <div className='m-5'>
-              {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
+            <div className='flex flex-wrap lg:justify-around md:justify-around sm:justify-start justify-center  mt-5'>
+              <div className='m-5 w-36'>
+              {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
-              <div className='m-5'>
-              {col2.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
+              <div className='m-5 w-36'>
+              {col2.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
-              <div className='m-5'>
-              {col3.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer min-w-fit'>{col}</p>))}
+              <div className='m-5 w-36'>
+              {col3.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
             </div>
           </div>
