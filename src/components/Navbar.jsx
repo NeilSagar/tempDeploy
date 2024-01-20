@@ -20,9 +20,9 @@ export default function Navbar() {
     </div>
     <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12  mx-auto text-center lg:mt-40 md:mt-32 sm:mt-24 mt-14'>
         <div className='  text-white flex flex-col space-y-6'>
-            <h2 className='w-2/3 min-w-fit mx-auto text-4xl text-center '>
+            <h2 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-3xl text-center '>
             <span className='ColorfulHeading'>ACFT Calculator</span> - Calculate Army Combat Fitness Test Score</h2>
-            <p>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
+            <p className='font-light lg:text-2xl text-lg '>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
         </div>
     </div>
     </div>

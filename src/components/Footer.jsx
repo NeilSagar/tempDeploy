@@ -37,9 +37,9 @@ export default function Footer() {
           </div>
       </div>
       
-      <div className='flex justify-end min-w-fit flex-wrap'>
+      <div className='flex flex-wrap  lg:justify-end md:justify-end justify-center min-w-fit '>
         {logos.map((logo,index)=>(
-          <img key={index} src={logo} alt='social-app'/>
+          <img key={index} src={logo} alt='social-app' className='min-w-fit'/>
         ))}
       </div>
 
