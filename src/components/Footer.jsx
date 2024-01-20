@@ -39,11 +39,12 @@ export default function Footer() {
       
       <div className='flex flex-wrap  lg:justify-end md:justify-end justify-center min-w-fit '>
         {logos.map((logo,index)=>(
-          <img key={index} src={logo} alt='social-app' className='min-w-fit'/>
+          <img key={index} src={logo} alt='social-app' className='lg:w-20 md:w-20 sm:w-20 w-12'/>
         ))}
       </div>
 
-      <p className='mt-4 w-1/2 mx-auto text-center'>Copyright 2024 Calender. All right reserved</p>
+      <p className='mt-4  mx-auto text-center lg:text-lg md:text-lg text-sm 
+      w-11/12'>Copyright 2024 Calender. All right reserved</p>
     </div>
   )
 }

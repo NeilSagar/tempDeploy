@@ -64,7 +64,9 @@ export default function Calculator() {
       }, [rangeInputs]);
  
   return (
-    <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12   mx-auto text-center lg:-mt-52 md:-mt-60 sm:-mt-64 -mt-72'>
+    <div className='lg:w-1/2 md:w-2/3  sm:w-9/12 w-full  mx-auto text-center 
+    lg:-mt-60 md:-mt-80 -mt-96
+    '>
         <div className='bg-white rounded-sm py-3'>
             <div className='flex justify-around my-2'>
                 <label htmlFor="age">Age :

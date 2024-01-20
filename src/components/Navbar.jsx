@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className='  text-white flex flex-col space-y-6'>
             <h2 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-3xl text-center '>
             <span className='ColorfulHeading'>ACFT Calculator</span> - Calculate Army Combat Fitness Test Score</h2>
-            <p className='font-light lg:text-2xl text-lg '>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
+            <p className='font-light lg:text-2xl md:text-lg text-sm'>Calculate your Army Combat Fitness Test score using the ACFT calculator and the latest score charts.</p>
         </div>
     </div>
     </div>
