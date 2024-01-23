@@ -19,9 +19,9 @@ export default function Footer() {
         <h2>Back to Top</h2>
       </div>
       <div className='lg:w-2/3 md:5/6 w-full mx-auto'>
-          <div>
+          <p className='m-2'>
             Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </div>
+          </p>
           <div>
             <div className='flex flex-wrap lg:justify-around md:justify-around sm:justify-start justify-center  mt-5'>
               <div className='m-5 w-36'>
