@@ -55,7 +55,7 @@ function calc_value(tableInd,age,gender,val){
         case "42-46": colInd = 11; break;
         case "47-51": colInd = 13; break;
         case "52-56": colInd = 15; break; 
-        case "57-62": colInd = 17; break;
+        case "57-61": colInd = 17; break;
         case "62+":   colInd = 19; break;
         default :  colInd = -1
     }
