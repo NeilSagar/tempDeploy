@@ -6932,7 +6932,7 @@ const data = {
   "19": "MF"
  },
  {
-  "1": "Sprint\/Drag\/Carry(SDC)(OverallTime:minutesandseconds)"
+  "1": "Sprint /Drag /Carry(SDC)(OverallTime:minutesandseconds)"
  },
  {
   "1": "17-21",

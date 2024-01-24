@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import ScoreCard from './ScoreCard';
 import Slider from '@mui/material/Slider';
 
@@ -18,7 +18,14 @@ export default function Calculator() {
     const parameters = ["Maximum Deadlift (MDL):","Standing Power Throw (SPT):","Hand Release Push-Up (HRP):",
     "Spring Drag Carry (SDC):","Plank Hold (PLK):","2-Mile Run (2MR)"];
     const units = ["lbs","m","reps","","",""];
-    const minmax = [{min:60,max:340},{min:2.3,max:13.1},{min:0,max:62},{min:348,max:89},{min:40,max:220},{min:1620,max:802}];
+    const minmax = useMemo(() => [
+        { min: 60, max: 340 },
+        { min: 2.3, max: 13.1 },
+        { min: 0, max: 62 },
+        { min: 348, max: 89 },
+        { min: 40, max: 220 },
+        { min: 1620, max: 802 },
+    ], []);
 
     const keysRangeInputs = Object.keys(rangeInputs);
 
@@ -36,42 +43,43 @@ export default function Calculator() {
             }
         });
     }
-    function calculateValue(index,value){
+    const calculateValue = useCallback((index, value) => {
         const minval = minmax[index].min;
         const maxval = minmax[index].max;
-        let currentValue = minval +((value / 100) * (maxval - minval));
-        if(index === 1){
+        let currentValue = minval + ((value / 100) * (maxval - minval));
+        if (index === 1) {
             currentValue = parseFloat(minval) + ((value / 100) * parseFloat(maxval - minval));
             return currentValue.toFixed(1);
         }
-        if(index>=3){
-            let minutes = Math.floor( currentValue / 60 );
-            let seconds = Math.floor(currentValue%60);
-            if(minutes<10)minutes = "0"+minutes;
-            if(seconds<10)seconds = "0"+seconds;
-            return minutes+":"+seconds;
+        if (index >= 3) {
+            let minutes = Math.floor(currentValue / 60);
+            let seconds = Math.floor(currentValue % 60);
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            return minutes + ":" + seconds;
         }
-        currentValue = Math.floor(currentValue) ;
+        currentValue = Math.floor(currentValue);
         return currentValue;
+    }, [minmax]);
 
-    }
     useEffect(() => {
-          const mdl = Number(calc_value(1,age,gender,calculateValue(0,rangeInputs[keysRangeInputs[0]])));
-          const spt = Number(calc_value(2,age,gender,calculateValue(1,rangeInputs[keysRangeInputs[1]])));
-          const hrp = Number(calc_value(3,age,gender,calculateValue(2,rangeInputs[keysRangeInputs[2]])));
-          const sdc = Number(calc_value(4,age,gender,calculateValue(3,rangeInputs[keysRangeInputs[3]])));
-          const plk = Number(calc_value(5,age,gender,calculateValue(4,rangeInputs[keysRangeInputs[4]])));
-          const mr2 = Number(calc_value(6,age,gender,calculateValue(5,rangeInputs[keysRangeInputs[5]])));
-          
-          const totalCalc = mdl +spt +hrp +sdc +plk+mr2;
-          setTotalP(parseInt(totalCalc));
-        
-          if(mdl>=60 && spt>=60 && hrp>=60 && sdc>=60 && plk>=60 && mr2>=60){
+        const mdl = Number(calc_value(1, age, gender, calculateValue(0, rangeInputs[keysRangeInputs[0]])));
+        const spt = Number(calc_value(2, age, gender, calculateValue(1, rangeInputs[keysRangeInputs[1]])));
+        const hrp = Number(calc_value(3, age, gender, calculateValue(2, rangeInputs[keysRangeInputs[2]])));
+        const sdc = Number(calc_value(4, age, gender, calculateValue(3, rangeInputs[keysRangeInputs[3]])));
+        const plk = Number(calc_value(5, age, gender, calculateValue(4, rangeInputs[keysRangeInputs[4]])));
+        const mr2 = Number(calc_value(6, age, gender, calculateValue(5, rangeInputs[keysRangeInputs[5]])));
+
+        const totalCalc = mdl + spt + hrp + sdc + plk + mr2;
+        setTotalP(parseInt(totalCalc));
+
+        if (mdl >= 60 && spt >= 60 && hrp >= 60 && sdc >= 60 && plk >= 60 && mr2 >= 60) {
             setResult("Passed");
-          }else{
+        } else {
             setResult("Does not meet standard.");
-          }
-      }, [rangeInputs]);
+        }
+    }, [rangeInputs, age, gender, calculateValue, keysRangeInputs]);
+
   return (
     <div  className='lg:w-1/2 md:w-2/3  sm:w-9/12 w-full  mx-auto text-center mt-5'>
         <div className='bg-white rounded-sm py-1 shadow-lg'>
@@ -115,7 +123,6 @@ export default function Calculator() {
                     name={keysRangeInputs[index]} 
                     value={rangeInputs[keysRangeInputs[index]]*10} 
                     onChange={handleChange} 
-                    
                     />
                     <div className='values flex justify-between'>
                         <p>
