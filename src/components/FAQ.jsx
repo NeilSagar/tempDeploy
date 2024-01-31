@@ -1,6 +1,6 @@
 import React from 'react'
 import AccordionComp from './AccordionComp'
-
+import { FAQ_ques,FAQ_ans } from '../Resources/Contents';
 
 export default function FAQ() {
 
@@ -21,7 +21,7 @@ export default function FAQ() {
       <div className='my-3 flex flex-col space-y-2 w-full'>
         {Questions.map((question,index)=>{
           return(
-            <AccordionComp key={index} question={question}/>
+            <AccordionComp key={index} question={FAQ_ques[index]} answers = {FAQ_ans[index]}/>
           )
         })}
       </div>
