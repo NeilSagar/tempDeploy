@@ -33,7 +33,7 @@ useEffect(()=>{
 
 const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for assessing your performance in the Army Combat Fitness Test. Whether you're actively serving, preparing to enlist, or just aiming to keep fit, our calculator is designed to guide you through your fitness journey with ease and clarity.";
   return (
-    <div className=' flex flex-col items-center text-left space-y-10 my-10'>
+    <div className='flex flex-col items-center text-left space-y-10 my-10'>
       {readMore?
       <div>
         {/* heading 2.1 */}
@@ -164,18 +164,9 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
           </p>
           <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
             The scoring system is designed not only to assess current fitness but also to motivate continual improvement and readiness. It encompasses a range of physical challenges, each aimed at measuring key aspects of military fitness. From strength and endurance to speed and agility, the ACFT Scoring Scales give soldiers a detailed understanding of their performance in areas critical to their roles in the Army. By understanding these scales, soldiers can better target their training, focusing on areas that need improvement, and striving for excellence in all aspects of physical fitness.
+            <span className='underline hover:cursor-pointer font-light' onClick={handleReadLess}>read less</span>
           </p>
-
-        </div>
-        {/* heading 2.7 */}
-        <div className='my-7 lg:w-1/2 md:w-2/3 w-11/12 mx-auto'>
-          <h2 className=' lg:text-4xl md:text-4xl sm:text-2xl text-xl'>
-          Benefits of ACFT Calculator
-          </h2>
-          <p className=' my-5 font-light  tracking-wide leading-8'>
-            The ACFT Calculator is an essential tool for accurately assessing physical fitness and tracking progress in the Army Combat Fitness Test. It offers personalized insights and guidance, aiding soldiers in achieving optimal physical readiness.
-          </p>
-          <span className='underline hover:cursor-pointer font-light' onClick={handleReadLess}>read less</span>
+          
         </div>
         
       </div>
@@ -193,9 +184,13 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
         </div>
       </div>}
      
-
-      <h2 className='lg:w-1/2 md:w-2/3 w-11/12 mx-auto lg:text-4xl md:text-4xl sm:text-2xl text-xl'>Benefits of Youtube Thumbnail Downloader
-</h2>
+      <div className=' flex flex-col items-center text-left space-y-10 my-10'>
+      <h2 className='lg:w-1/2 md:w-2/3 w-11/12 mx-auto lg:text-4xl md:text-4xl sm:text-2xl text-xl'>
+      Benefits of ACFT Calculator
+      </h2>
+      <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
+        The ACFT Calculator is an essential tool for accurately assessing physical fitness and tracking progress in the Army Combat Fitness Test. It offers personalized insights and guidance, aiding soldiers in achieving optimal physical readiness.
+      </p>
       <div className=' flex flex-wrap justify-center'>
         {images.map((image,index)=>{
           return (
@@ -206,6 +201,7 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
             />
           )
         })}
+      </div>
       </div>
     </div>
   )
