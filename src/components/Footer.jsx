@@ -4,6 +4,7 @@ import LinkedIn from "../Resources/LinkedIn.png"
 import TwitterX from "../Resources/TwitterX.png"
 import Facebook from "../Resources/Facebook.png"
 import Instagram from "../Resources/Instagram.png"
+import ACFT_LOGO from "../Resources/ACFT_logo.png"
 
 export default function Footer() {
   const col1=["Contact Us","ABOUT US","Privacy Policy","Terms of Service","DMCA Policy","Authors",
@@ -15,8 +16,11 @@ export default function Footer() {
   const footerContent = "© 2024 U.S. Army Combat Fitness Test Information. All Rights Reserved.For more information, visit the official U.S. Army website or contact us.Stay updated on ACFT news, guidelines, and resources by following us on our social media channels.";
   return (
     <div className='w-5/6 mx-auto py-10'>
-      <div className='flex justify-between items-center'>
-        <h1 className='font-semibold'>LOGO</h1>
+      <div className='flex flex-wrap justify-between items-center'>
+        <img  className='h-20 object-cover object-center w-40'
+            src={ACFT_LOGO}
+            alt='logo'
+        />
         <h2>Back to Top</h2>
       </div>
       <div className='lg:w-2/3 md:5/6 w-full mx-auto'>

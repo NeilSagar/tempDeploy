@@ -31,6 +31,7 @@ export default function Navbar() {
             <button className='hover:underline'>Contacts</button>
         </div>
     </div>
+
     <div className={`flex flex-col space-y-2 p-4 z-10 text-white bg-opacity-15 bg-black lg:hidden md:hidden transition-opacity ${displayNavbar ? 'opacity-100 h-auto' : 'opacity-0 h-0 overflow-hidden'}`}>
       <button className='hover:underline'>Home</button>
       <button className='hover:underline'>Blog</button>
