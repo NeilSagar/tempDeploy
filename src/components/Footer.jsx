@@ -12,6 +12,7 @@ export default function Footer() {
   "Terms of Sale","Subscription"];
   const col3 = ["Blog/Articles","Trust","Help"];
   const logos = [Pinterest,LinkedIn,TwitterX,Facebook,Instagram];
+  const footerContent = "© 2024 U.S. Army Combat Fitness Test Information. All Rights Reserved.For more information, visit the official U.S. Army website or contact us.Stay updated on ACFT news, guidelines, and resources by following us on our social media channels.";
   return (
     <div className='w-5/6 mx-auto py-10'>
       <div className='flex justify-between items-center'>
@@ -20,7 +21,7 @@ export default function Footer() {
       </div>
       <div className='lg:w-2/3 md:5/6 w-full mx-auto'>
           <p className='m-2'>
-            Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            {footerContent}
           </p>
           <div>
             <div className='flex flex-wrap lg:justify-around md:justify-around sm:justify-start justify-center  mt-5'>
