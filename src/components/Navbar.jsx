@@ -10,11 +10,8 @@ export default function Navbar() {
 
   return (
     <div id="navbar">
-    <div className='flex justify-between 
-    bg-opacity-15
-    bg-black
-    text-white'>
-        <div className='ms-2 mt-2'>
+    <div className='flex justify-between bg-opacity-15 bg-black text-white'>
+        <div className='ms-2'>
           <img  className='h-20 object-cover object-center w-40'
             src={logoImg}
             alt='logo'
@@ -41,7 +38,7 @@ export default function Navbar() {
       <button className='hover:underline'>Contacts</button>
     </div>
 
-    <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12  mx-auto text-center mt-14'>
+    <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12  mx-auto text-center '>
         <div className='  text-white flex flex-col space-y-6'>
             <h2 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-xl text-center '>
             <span className='ColorfulHeading'>ACFT Calculator</span> - Calculate Army Combat Fitness Test Score</h2>
