@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b01a81d0.css",
+    "main.js": "/static/js/main.e91c17a6.js",
+    "static/media/headerImg.png": "/static/media/headerImg.7953f4adcde61b68cf39.png",
+    "static/media/ACFT_LOGO_INVERTED.png": "/static/media/ACFT_LOGO_INVERTED.3ec5b4ea8b1fd3f0ff46.png",
+    "static/media/ACFT_logo.png": "/static/media/ACFT_logo.b53c152d3556fb9f0a28.png",
+    "index.html": "/index.html",
+    "main.b01a81d0.css.map": "/static/css/main.b01a81d0.css.map",
+    "main.e91c17a6.js.map": "/static/js/main.e91c17a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b01a81d0.css",
+    "static/js/main.e91c17a6.js"
+  ]
+}
