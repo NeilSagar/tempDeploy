@@ -14,6 +14,20 @@ export default function Footer() {
   const col3 = ["Blog/Articles","Trust","Help"];
   const logos = [Pinterest,LinkedIn,TwitterX,Facebook,Instagram];
   const footerContent = "© 2024 U.S. Army Combat Fitness Test Information. All Rights Reserved.For more information, visit the official U.S. Army website or contact us.Stay updated on ACFT news, guidelines, and resources by following us on our social media channels.";
+
+
+  const scrollToElement = (elementId) => {
+    
+    const element = document.getElementById(elementId);
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function backToTop(){
+    scrollToElement('navbar');
+  }
   return (
     <div className='w-5/6 mx-auto py-10'>
       <div className='flex flex-wrap justify-between items-center'>
@@ -21,7 +35,9 @@ export default function Footer() {
             src={ACFT_LOGO}
             alt='logo'
         />
-        <h2>Back to Top</h2>
+        <h2 onClick={backToTop} className='underline hover:cursor-pointer'>
+          Back to Top
+        </h2>
       </div>
       <div className='lg:w-2/3 md:5/6 w-full mx-auto'>
           <p className='m-2'>

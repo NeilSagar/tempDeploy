@@ -6,8 +6,10 @@ import logoImg from "../Resources/ACFT_LOGO_INVERTED.png";
 
 export default function Navbar() {
   const [displayNavbar,setDisplayNavbar] = useState(false);
+
+
   return (
-    <div>
+    <div id="navbar">
     <div className='flex justify-between 
     bg-opacity-15
     bg-black
