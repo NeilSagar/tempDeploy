@@ -35,7 +35,7 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
   return (
     <div className='flex flex-col items-center text-left space-y-10 my-10'>
       {readMore?
-      <div>
+      <div className='h-96 overflow-auto border-2'>
         {/* heading 2.1 */}
         <div className='my-7'>
         <h2 className='lg:w-1/2 md:w-2/3 w-11/12 mx-auto lg:text-4xl md:text-4xl sm:text-2xl text-xl'>
@@ -164,7 +164,7 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
           </p>
           <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
             The scoring system is designed not only to assess current fitness but also to motivate continual improvement and readiness. It encompasses a range of physical challenges, each aimed at measuring key aspects of military fitness. From strength and endurance to speed and agility, the ACFT Scoring Scales give soldiers a detailed understanding of their performance in areas critical to their roles in the Army. By understanding these scales, soldiers can better target their training, focusing on areas that need improvement, and striving for excellence in all aspects of physical fitness.
-            <span className='underline hover:cursor-pointer font-light' onClick={handleReadLess}>read less</span>
+            <div className='underline hover:cursor-pointer font-medium' onClick={handleReadLess}>read less</div>
           </p>
           
         </div>
@@ -177,8 +177,8 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
         ACFT Score Tool: Assess Your Army Combat Fitness Test Performance 
         </h2>
         <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
-          {firstSentence.slice(0,250)}
-          <span className='underline hover:cursor-pointer' onClick={()=>{setReadMore(!readMore)}}>read more</span>
+          {firstSentence.slice(0,250)} ... 
+          <div className='underline hover:cursor-pointer font-medium' onClick={()=>{setReadMore(!readMore)}}>read more</div>
         </p>
         
         </div>

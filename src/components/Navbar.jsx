@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div id="navbar">
     <div className='flex justify-between bg-opacity-15 bg-black text-white'>
-        <div className='ms-2'>
+        <div className='ms-1 mt-1'>
           <img  className='h-20 object-cover object-center w-40'
             src={logoImg}
             alt='logo'
@@ -38,11 +38,12 @@ export default function Navbar() {
       <button className='hover:underline'>Contacts</button>
     </div>
 
-    <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12  mx-auto text-center '>
+    <div className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-11/12  mx-auto text-center mt-2'>
         <div className='  text-white flex flex-col space-y-6'>
-            <h2 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-xl text-center '>
-            <span className='ColorfulHeading'>ACFT Calculator</span> - Calculate Army Combat Fitness Test Score</h2>
-            <p className='font-light lg:text-2xl md:text-xl sm:text-lg text-sm'>
+            <h1 className='w-2/3 min-w-fit mx-auto lg:text-4xl md:text-4xl sm:text-3xl text-xl text-center '>
+              ACFT Score Calculator Online
+            </h1>
+            <p className='font-light text-xs'>
               Determine your ACFT (Army Combat Fitness Test) score with our updated calculator and the most recent scoring charts.
             </p>
         </div>

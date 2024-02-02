@@ -35,9 +35,9 @@ export default function Footer() {
             src={ACFT_LOGO}
             alt='logo'
         />
-        <h2 onClick={backToTop} className='underline hover:cursor-pointer'>
+        <p onClick={backToTop} className='underline hover:cursor-pointer'>
           Back to Top
-        </h2>
+        </p>
       </div>
       <div className='lg:w-2/3 md:5/6 w-full mx-auto'>
           <p className='m-2'>

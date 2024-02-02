@@ -15,8 +15,7 @@ export default function Calculator() {
     });
     const [age,setAge] = useState("17-21");
     const [gender,setGender] = useState("Male");
-    const parameters = ["Maximum Deadlift (MDL):","Standing Power Throw (SPT):","Hand Release Push-Up (HRP):",
-    "Spring Drag Carry (SDC):","Plank Hold (PLK):","2-Mile Run (2MR)"];
+    const parameters = ["MDL","SPT","HPR","SDC","PLK","2MR"];
     const units = ["lbs","m","reps","","",""];
     const minmax = useMemo(() => [
         { min: 60, max: 340 },
@@ -82,8 +81,8 @@ export default function Calculator() {
 
   return (
     <div  className='lg:w-1/2 md:w-2/3  sm:w-9/12 w-full  mx-auto text-center mt-5'>
-        <div className='bg-white lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-sm py-1 shadow-lg'>
-            <div className='flex justify-around my-2'>
+        <div className='bg-white lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-sm shadow-lg py-10'>
+            <div className='flex justify-around '>
                 <label htmlFor="age">Age :
                 <select id='age' className='p-2 focus:outline-none'
                 onChange={(e)=>{setAge(e.target.value)}}
@@ -112,30 +111,48 @@ export default function Calculator() {
                 </label>
             </div>
 
-            <div className='w-10/12 mx-auto'>
-            
-            {parameters.map((parameter,index)=>(
-                <div key={index}>
-                    <p>{parameter}</p>
-                    <Slider sx={{color:"#13BB24",height:"7px"}} 
-                    defaultValue={0} 
-                    max={1000}
-                    name={keysRangeInputs[index]} 
-                    value={rangeInputs[keysRangeInputs[index]]*10} 
-                    onChange={handleChange} 
-                    />
-                    <div className='values flex justify-between'>
-                        <p>
-                            {calculateValue(index,rangeInputs[keysRangeInputs[index]])} {units[index]}
-                        </p>
-                        <div>
-                            <p style={calc_value(index+1,age,gender,calculateValue(index,rangeInputs[keysRangeInputs[index]]))>=60?{backgroundColor:"#13BB24"}:{}} className='border px-4 py-1 rounded-xl'>{calc_value(index+1,age,gender,calculateValue(index,rangeInputs[keysRangeInputs[index]]))}</p>
-                        </div>
-                    
-                    </div>
-                </div>
+            <div className='w-11/12 mx-auto'>
+                <table className='w-full'>
+                    <thead>
+                        <tr>
+                            <th className='w-1/12 '></th>
+                            <th className='w-8/12'></th>
+                            <th className='w-2/12'></th>
+                            <th className='w-1/12'></th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    {parameters.map((parameter,index)=>(
+                
+                    <tr key={index} className='table-row h-16'>
+                        <td>
+                            <p>{parameter}</p>
+                        </td>
+                        <td >
+                            <div className='flex items-center'>
+                            <Slider sx={{color:"#13BB24",height:"7px",width:"90%",marginX:"auto"}} 
+                                defaultValue={0} 
+                                max={1000}
+                                name={keysRangeInputs[index]} 
+                                value={rangeInputs[keysRangeInputs[index]]*10} 
+                                onChange={handleChange} 
+                            />
+                            </div>
+                        </td>
+                        <td>
+                            <p>
+                                {calculateValue(index,rangeInputs[keysRangeInputs[index]])} {units[index]}
+                            </p>
+                        </td>
+                        <td>
+                            <div>
+                                <p style={calc_value(index+1,age,gender,calculateValue(index,rangeInputs[keysRangeInputs[index]]))>=60?{backgroundColor:"#13BB24"}:{}} className='border px-4 py-1 rounded-xl shadow-sm'>{calc_value(index+1,age,gender,calculateValue(index,rangeInputs[keysRangeInputs[index]]))}</p>
+                            </div>
+                        </td>
+                    </tr>
             ))}
-            
+            </tbody>
+            </table>
             </div>
             
             <div className='flex justify-around my-5 flex-wrap'>
