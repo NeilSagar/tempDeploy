@@ -164,9 +164,11 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
           </p>
           <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
             The scoring system is designed not only to assess current fitness but also to motivate continual improvement and readiness. It encompasses a range of physical challenges, each aimed at measuring key aspects of military fitness. From strength and endurance to speed and agility, the ACFT Scoring Scales give soldiers a detailed understanding of their performance in areas critical to their roles in the Army. By understanding these scales, soldiers can better target their training, focusing on areas that need improvement, and striving for excellence in all aspects of physical fitness.
-            <div className='underline hover:cursor-pointer font-medium' onClick={handleReadLess}>read less</div>
+            
           </p>
-          
+          <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-2  tracking-wide leading-8 underline hover:cursor-pointer font-medium' onClick={handleReadLess}>
+            read less
+          </p>
         </div>
         
       </div>
@@ -178,9 +180,8 @@ const firstSentence = "Welcome to the ACFT Calculator, your reliable tool for as
         </h2>
         <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5 font-light  tracking-wide leading-8'>
           {firstSentence.slice(0,250)} ... 
-          <div className='underline hover:cursor-pointer font-medium' onClick={()=>{setReadMore(!readMore)}}>read more</div>
         </p>
-        
+        <p className='lg:w-1/2 md:w-2/3 w-11/12  mx-auto my-5  tracking-wide leading-8 underline hover:cursor-pointer font-medium' onClick={()=>{setReadMore(!readMore)}}>read more</p>
         </div>
       </div>}
      
