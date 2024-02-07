@@ -14,7 +14,7 @@ const customStyle = {
 
 function App() {
   return (
-    <div style={customStyle} className='h-svh '>
+    <div >
       <Header/>
       <Body/>
       <FAQ/>
