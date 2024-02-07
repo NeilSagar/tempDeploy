@@ -10,9 +10,9 @@ export default function Navbar() {
 
   return (
     <div id="navbar" >
-      <div className='flex items-center justify-between bg-opacity-15 bg-black text-white h-fit'>
+      <div className='flex items-center 2xl:justify-around justify-between bg-opacity-15 bg-black text-white h-fit'>
         <div className='ms-1 mt-1 '>
-          <img  className='h-24 '
+          <img  className='h-20 w-40 object-cover '
             src={logoImg}
             alt='logo'
           />
