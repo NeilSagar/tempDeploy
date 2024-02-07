@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div style={{maxWidth:"2000px"}} className='mx-auto'>
+    <div style={{maxWidth:"2400px"}} className='mx-auto'>
       <BrowserRouter>
         <Header />
         <Routes>
