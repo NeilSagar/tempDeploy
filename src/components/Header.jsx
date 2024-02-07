@@ -13,7 +13,7 @@ const customStyle = {
 
 export default function Header() {
   return (
-    <div  style={customStyle} className='pb-10'>
+    <div  style={customStyle} className='pb-10 '>
         <Navbar/>
         <Calculator/>
     </div>

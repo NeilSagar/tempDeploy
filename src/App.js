@@ -14,7 +14,8 @@ const customStyle = {
 
 function App() {
   return (
-    <div >
+    <div style={{maxWidth:"2000px"}} className='mx-auto'>
+
       <Header/>
       <Body/>
       <FAQ/>

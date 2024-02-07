@@ -29,8 +29,10 @@ export default function Footer() {
     scrollToElement('navbar');
   }
   return (
-    <div className='w-5/6 mx-auto py-10'>
-      <div className='flex flex-wrap justify-between items-center'>
+    <div className='w-full py-10 bg-slate-200'>
+    <div className='lg:w-7/12 md:w-2/3 w-11/12 mx-auto'>
+      <div className='w-full mx-auto'>
+      <div className=' flex flex-wrap justify-between items-center'>
         <img  className='h-20 object-cover object-center w-40'
             src={ACFT_LOGO}
             alt='logo'
@@ -39,19 +41,19 @@ export default function Footer() {
           Back to Top
         </p>
       </div>
-      <div className='lg:w-2/3 md:5/6 w-full mx-auto'>
-          <p className='m-2'>
+      <div className='w-full mx-auto'>
+          <p className='mt-2'>
             {footerContent}
           </p>
           <div>
-            <div className='flex flex-wrap lg:justify-around md:justify-around sm:justify-start justify-center  mt-5'>
-              <div className='m-5 w-36'>
+            <div className='flex flex-wrap justify-around  mt-5 text-center'>
+              <div className='lg:w-36 md:w-36 sm:w-36 w-full my-5 '>
               {col1.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
-              <div className='m-5 w-36'>
+              <div className='lg:w-36 md:w-36 sm:w-36 w-full my-5'>
               {col2.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
-              <div className='m-5 w-36'>
+              <div className='lg:w-36 md:w-36 sm:w-36 w-full my-5'>
               {col3.map((col,index)=>(<p key={index} className='hover:underline hover:cursor-pointer  w-full'>{col}</p>))}
               </div>
             </div>
@@ -66,6 +68,8 @@ export default function Footer() {
 
       <p className='mt-4  mx-auto text-center lg:text-lg md:text-lg sm:text-sm text-xs 
       w-11/12'>Copyright 2024 Calender. All right reserved</p>
+      </div>
+      </div>
     </div>
   )
 }

@@ -80,7 +80,8 @@ export default function Calculator() {
     }, [rangeInputs, age, gender, calculateValue, keysRangeInputs]);
 
   return (
-    <div  className='lg:w-1/2 md:w-2/3  sm:w-9/12 w-full  mx-auto text-center mt-5'>
+    <div  className='lg:w-1/2 md:w-2/3 sm:w-9/12 w-full  mx-auto text-center mt-5 '>
+        <div style={{maxWidth:"750px"}} className='mx-auto'>
         <div className='bg-white lg:rounded-2xl md:rounded-xl sm:rounded-lg rounded-sm shadow-lg py-10'>
             <div className='flex justify-around '>
                 <label htmlFor="age">Age :
@@ -159,6 +160,7 @@ export default function Calculator() {
                 <ScoreCard heading="Total Points:" value={totalP}/>
                 <ScoreCard heading="Result:" value={result}/>
             </div>
+        </div>
         </div>
     </div>
   )
