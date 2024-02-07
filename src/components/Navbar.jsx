@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div id="navbar" >
-      <div className='flex items-center 2xl:justify-around justify-between bg-opacity-15 bg-black text-white h-fit'>
+      <div className='flex items-center 3xl:px-48 lg:px-32 justify-between bg-opacity-15 bg-black text-white h-fit p-2'>
         <div className='ms-1 mt-1 '>
           <img  className='h-20 w-40 object-cover '
             src={logoImg}
