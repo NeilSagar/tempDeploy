@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.74bacd1c.css",
-    "main.js": "/static/js/main.07738d07.js",
+    "main.css": "/static/css/main.3acd9080.css",
+    "main.js": "/static/js/main.fb13fd36.js",
     "static/media/ACFT_LOGO_INVERTED.png": "/static/media/ACFT_LOGO_INVERTED.3ec5b4ea8b1fd3f0ff46.png",
     "static/media/ACFT_logo.png": "/static/media/ACFT_logo.b53c152d3556fb9f0a28.png",
     "static/media/headerImg.webp": "/static/media/headerImg.042c3fe33f9a454247c0.webp",
     "index.html": "/index.html",
-    "main.74bacd1c.css.map": "/static/css/main.74bacd1c.css.map",
-    "main.07738d07.js.map": "/static/js/main.07738d07.js.map"
+    "main.3acd9080.css.map": "/static/css/main.3acd9080.css.map",
+    "main.fb13fd36.js.map": "/static/js/main.fb13fd36.js.map"
   },
   "entrypoints": [
-    "static/css/main.74bacd1c.css",
-    "static/js/main.07738d07.js"
+    "static/css/main.3acd9080.css",
+    "static/js/main.fb13fd36.js"
   ]
 }
